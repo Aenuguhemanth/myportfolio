@@ -1,8 +1,5 @@
 'use strict';
 
-// This JavaScript code is optional and not required to create the typing animation.
-
-// Wait for the DOM to finish loading
 document.addEventListener('DOMContentLoaded', function() {
     // Get all the elements with the "typewriter" class
     var typewriter = document.querySelectorAll('.typewriter');
