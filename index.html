@@ -5,492 +5,127 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
-    <script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
-
-    <link rel="icon" href="https://i.ibb.co/jDWw64y/4714992-avatar-man-people-person-profile-icon.png" type="image/icon type">
     <title>Personal Portfolio</title>
 
+    <!-- Favicon -->
+    <link rel="icon" href="https://i.ibb.co/jDWw64y/4714992-avatar-man-people-person-profile-icon.png" type="image/icon">
     <link rel="shortcut icon" href="./assets/images/logo.ico" type="image/x-icon">
 
-
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="./assets/css/style.css">
 
-
+    <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
 </head>
 
 <body class="body">
 
-
-
     <main>
 
-
+        <!-- Sidebar -->
         <aside class="sidebar" data-sidebar>
-
             <div class="sidebar-info">
-
-                <figure class="avatar-box ">
+                <figure class="avatar-box">
                     <img src="https://i.ibb.co/ckKz6H4/kk.jpg" alt="Aenugu Hemanth" width="80">
                 </figure>
                 <div class="typewriter">
-                    <div class="info-content">
-                        <h1 class="name" title="Hemanth">Aenugu Hemanth</h1>
-
-                    </div>
-                    <div class="info-content">
-                        <p class="title">Aspiring Software developer</p>
-
-                    </div>
+                    <h1 class="name">Aenugu Hemanth</h1>
+                    <p class="title">Aspiring Software Developer</p>
                 </div>
-
-
-
-
                 <button class="info_more-btn" data-sidebar-btn>
                     <span>Show Contacts</span>
-
                     <ion-icon name="chevron-down"></ion-icon>
                 </button>
-
             </div>
 
             <div class="sidebar-info_more">
-
                 <div class="separator"></div>
-
                 <ul class="contacts-list">
-
                     <li class="contact-item">
-
-                        <div class="icon-box">
-                            <ion-icon name="mail-outline"></ion-icon>
-                        </div>
-
+                        <div class="icon-box"><ion-icon name="mail-outline"></ion-icon></div>
                         <div class="contact-info">
                             <p class="contact-title">Email</p>
-
-                            <a href="mailto:marcshemanthraj@gmail.com" class="contact-link">hemanthaenugu@gmail.com</a>
+                            <a href="mailto:hemanthaenugu@gmail.com">hemanthaenugu@gmail.com</a>
                         </div>
-
                     </li>
-
                     <li class="contact-item">
-
-                        <div class="icon-box">
-                            <ion-icon name="phone-portrait-outline"></ion-icon>
-                        </div>
-
+                        <div class="icon-box"><ion-icon name="phone-portrait-outline"></ion-icon></div>
                         <div class="contact-info">
                             <p class="contact-title">Phone</p>
-
-                            <a href="tel:+1(314) 575-7005" class="contact-link">+1 (314) 575-7005</a>
+                            <a href="tel:+13145757005">+1 (314) 575-7005</a>
                         </div>
-
                     </li>
-
                     <li class="contact-item">
-
-                        <div class="icon-box">
-                            <ion-icon name="calendar-outline"></ion-icon>
-                        </div>
-
+                        <div class="icon-box"><ion-icon name="calendar-outline"></ion-icon></div>
                         <div class="contact-info">
                             <p class="contact-title">Birthday</p>
-
                             <time datetime="2001-04-03">April 03, 2001</time>
                         </div>
-
                     </li>
-
                     <li class="contact-item">
-
-                        <div class="icon-box">
-                            <ion-icon name="location-outline"></ion-icon>
-                        </div>
-
+                        <div class="icon-box"><ion-icon name="location-outline"></ion-icon></div>
                         <div class="contact-info">
                             <p class="contact-title">Location</p>
-
-                            <address>St.louis, Missouri, USA</address>
+                            <address>St. Louis, Missouri, USA</address>
                         </div>
-
                     </li>
-
                 </ul>
-
                 <div class="separator"></div>
-
                 <ul class="social-list">
-
-                    <li class="social-item">
-                        <a href="https://www.linkedin.com/in/hemanth-275a48265/" target="__blank" class="social-link">
-                            <ion-icon name="logo-LinkedIn"></ion-icon>
-                        </a>
-                    </li>
-
-                    <li class="social-item">
-                        <a href="#" class="social-link">
-                            <ion-icon name="logo-twitter"></ion-icon>
-                        </a>
-                    </li>
-
-                    <li class="social-item">
-                        <a href="#" class="social-link">
-                            <ion-icon name="logo-instagram"></ion-icon>
-                        </a>
-                    </li>
-
+                    <li><a href="https://www.linkedin.com/in/hemanth-275a48265/" target="_blank"><ion-icon name="logo-linkedin"></ion-icon></a></li>
+                    <li><a href="#"><ion-icon name="logo-twitter"></ion-icon></a></li>
+                    <li><a href="#"><ion-icon name="logo-instagram"></ion-icon></a></li>
                 </ul>
-
             </div>
-
         </aside>
 
+        <!-- Main Content -->
         <div class="main-content">
-
-
-
+            <!-- Navigation -->
             <nav class="navbar">
-
                 <ul class="navbar-list">
-
-                    <li class="navbar-item">
-                        <button class="navbar-link  active" data-nav-link>About</button>
-                    </li>
-
-                    <li class="navbar-item">
-                        <button class="navbar-link" data-nav-link>Resume</button>
-                    </li>
-
-
-                    <li class="navbar-item">
-                        <button class="navbar-link" data-nav-link>Contact</button>
-                    </li>
-
+                    <li><button class="navbar-link active" data-nav-link>About</button></li>
+                    <li><button class="navbar-link" data-nav-link>Resume</button></li>
+                    <li><button class="navbar-link" data-nav-link>Contact</button></li>
                 </ul>
-
             </nav>
 
-            <article class="about  active" data-page="about">
-
-                <header>
-                    <h2 class="h2 article-title">About me</h2>
-                </header>
-
-                <section class="about-text">
-                    <p>
-                        Passionate about coding and problem-solving | Open to learning and growing in a collaborative environment.🚀
-                    </p>
-
-                    <p>
-                        I'm pursuing my master's degree in cybersecurity, delving into the intricate world of digital security.
-
-                        Having recently completed my bachelor's in Computer Science, I'm fueled by a fervor for software engineering. I'm eager to employ my expertise in tackling complex challenges through programming. Throughout my academic journey, I've garnered practical experience with an array of programming languages and technologies, encompassing Java, Python, SQLite, HTML/CSS, JavaScript, and node.js.
-
-                        Moreover, my involvement in numerous team projects has honed my ability to collaborate effectively, communicate clearly, and adhere to agile development methodologies. As an eternal student, I relish the opportunity to embrace new hurdles and continually expand my knowledge horizons.
-                    </p>
+            <!-- About Section -->
+            <article class="about active" data-page="about">
+                <header><h2>About Me</h2></header>
+                <section>
+                    <p>Passionate about coding and problem-solving...</p>
                 </section>
             </article>
 
+            <!-- Resume Section -->
             <article class="resume" data-page="resume">
-
-                <header>
-                    <h2 class="h2 article-title">Resume</h2>
-                </header>
-
+                <header><h2>Resume</h2></header>
+                <!-- Education -->
                 <section class="timeline">
-
                     <div class="title-wrapper">
-                        <div class="icon-box">
-                            <ion-icon name="book-outline"></ion-icon>
-                        </div>
-
-                        <h3 class="h3">Education</h3>
+                        <ion-icon name="book-outline"></ion-icon>
+                        <h3>Education</h3>
                     </div>
-
-                    <ol class="timeline-list">
-                        <li class="timeline-item">
-
-                            <h4 class="h4 timeline-item-title">Webster University</h4>
-
-                            <span>2023 — 2025 </span>
-
-                            <p class="timeline-text">
-                                Masters in cybersecurity Operations ( 3.75 GPA )
-                            </p>
-
-                        </li>
-
-                        <li class="timeline-item">
-
-                            <h4 class="h4 timeline-item-title">Jawaharlal Nehru Technological University</h4>
-
-                            <span>2019 — 2022</span>
-
-                            <p class="timeline-text">
-                                Bachelor of Technology in Computer Science Engineering ( 7.1 CGPA )
-                            </p>
-
-                        </li>
-
-                        <li class="timeline-item">
-
-                            <h4 class="h4 timeline-item-title">Ramananda engineering college </h4>
-
-                            <span>2016 — 2019</span>
-
-                            <p class="timeline-text">
-                                Diploma in Electrical & Electronics Engineering (6.96 CGPA )
-                            </p>
-
-                        </li>
-
-                        <li class="timeline-item">
-
-                            <h4 class="h4 timeline-item-title">St. Alphonsus high school</h4>
-
-                            <span>2015 — 2016</span>
-
-                            <p class="timeline-text">
-                                Secondary School of Certificate (9.0 GPA)
-                            </p>
-
-                        </li>
-
+                    <ol>
+                        <li>...</li>
                     </ol>
-
                 </section>
-
-                <section class="timeline">
-
-                    <div class="title-wrapper">
-                        <div class="icon-box">
-                            <ion-icon name="book-outline"></ion-icon>
-                        </div>
-
-                        <h3 class="h3">Projects</h3>
-                    </div>
-
-                    <ol class="timeline-list">
-
-                        <li class="timeline-item">
-
-                            <h4 class="h4 timeline-item-title">E Commerce Website</h4>
-
-                            <span></span>
-
-                            <p class="timeline-text">
-                                Developed E Commerce website where users can go through different products, detailed information about a product, offers and contact us info.
-                                <br>Technologies used: HTML, CSS, Bootstrap
-
-                            </p>
-
-                        </li>
-
-                        <li class="timeline-item">
-
-                            <h4 class="h4 timeline-item-title">Typing Speed Test</h4>
-
-                            <span></span>
-
-                            <p class="timeline-text">
-                                Developed an application that measures the amount of time it takes to finish a certain paragraph.
-                                <br>Technologies used: HTML, CSS, JS, REST API Calls, Bootstrap
-                            </p>
-
-                        </li>
-
-                        <li class="timeline-item">
-
-                            <h4 class="h4 timeline-item-title">Food Munch </h4>
-
-                            <span></span>
-
-                            <p class="timeline-text">
-                                Developed a responsive website for Food Store where users can see a list of food items, detailed information about a food item, and offers.
-                                <br>Technologies used: HTML, CSS, Bootstrap
-                            </p>
-
-                        </li>
-                        <li class="timeline-item">
-
-                            <h4 class="h4 timeline-item-title">Detection of weapons for security applications using AI and Deep learning</h4>
-
-                            <span></span>
-
-                            <p class="timeline-text">
-                                Implements automatic gun (or) weapon detection using a convolution neural network (CNN) based SSD and Faster RCNN algorithms.
-                                <br>Technologies used: Python, OpenCV 3.4, Anaconda and TensorFlow 1.1, COCO Dataset.
-
-                            </p>
-
-                        </li>
-
-                    </ol>
-
-                </section>
-
-                <section class="skill ">
-
-                    <h3 class="h3 skills-title ">My skills</h3>
-
-                    <ul class="skills-list content-card">
-
-                        <li class="skills-item ">
-
-                            <div class="title-wrapper">
-                                <h5 class="h5">Html</h5>
-                                <data value="90">90%</data>
-                            </div>
-
-                            <div class="skill-progress-bg">
-                                <div class="skill-progress-fill" style="width: 90%;"></div>
-                            </div>
-
-                        </li>
-                        <li class="skills-item">
-
-                            <div class="title-wrapper">
-                                <h5 class="h5">CSS</h5>
-                                <data value="80">70%</data>
-                            </div>
-
-                            <div class="skill-progress-bg">
-                                <div class="skill-progress-fill" style="width: 70%;"></div>
-                            </div>
-
-                        </li>
-                        <li class="skills-item">
-
-                            <div class="title-wrapper">
-                                <h5 class="h5">Bootstrap</h5>
-                                <data value="80">85%</data>
-                            </div>
-
-                            <div class="skill-progress-bg">
-                                <div class="skill-progress-fill" style="width: 85%;"></div>
-                            </div>
-
-                        </li>
-                        <li class="skills-item">
-
-                            <div class="title-wrapper">
-                                <h5 class="h5">JavaScript</h5>
-                                <data value="80">80%</data>
-                            </div>
-
-                            <div class="skill-progress-bg">
-                                <div class="skill-progress-fill" style="width: 80%;"></div>
-                            </div>
-
-                        </li>
-                        <li class="skills-item">
-
-                            <div class="title-wrapper">
-                                <h5 class="h5">node.js</h5>
-                                <data value="80">70%</data>
-                            </div>
-
-                            <div class="skill-progress-bg">
-                                <div class="skill-progress-fill" style="width: 70%;"></div>
-                            </div>
-
-                        </li>
-
-                        <li class="skills-item">
-
-                            <div class="title-wrapper">
-                                <h5 class="h5">Python</h5>
-                                <data value="85">85%</data>
-                            </div>
-
-                            <div class="skill-progress-bg">
-                                <div class="skill-progress-fill" style="width: 85%;"></div>
-                            </div>
-
-                        </li>
-
-                        <li class="skills-item">
-
-                            <div class="title-wrapper">
-                                <h5 class="h5">Java</h5>
-                                <data value="90">70%</data>
-                            </div>
-
-                            <div class="skill-progress-bg">
-                                <div class="skill-progress-fill" style="width: 70%;"></div>
-                            </div>
-
-                        </li>
-
-                        <li class="skills-item">
-
-                            <div class="title-wrapper">
-                                <h5 class="h5">SQLite</h5>
-                                <data value="80">85%</data>
-                            </div>
-
-                            <div class="skill-progress-bg">
-                                <div class="skill-progress-fill" style="width: 85%;"></div>
-                            </div>
-
-                        </li>
-
-
-
-                    </ul>
-
-                </section>
-
             </article>
-
-
-            <article class="contact" data-page="contact">
-
-                <header>
-                    <h2 class="h2 article-title">Contact</h2>
-                </header>
-
-                <section class="mapbox" data-mapbox>
-                    <figure>
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31119.62365167717!2d-90.19940411262083!3d38.62700249925049!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x87d8b4a9faed8e77%3A0xc11f9e6d4ef7e000!2sSt.+Louis%2C+MO!5e0!3m2!1sen!2sus!4v1647430187590 " width="400" height="300" loading="lazy"></iframe>
-                    </figure>
-                </section>
-
-                <section class="contact-form">
-
-                    <h3 class="h3 form-title">Contact Form</h3>
-
-                    <form action="#" class="form" data-form>
-                        <div class="input-wrapper">
-                            <input type="text" name="fullname" class="form-input" placeholder="Full name" required data-form-input>
-                            <input type="email" name="email" class="form-input" placeholder="Email address" required data-form-input>
-                        </div>
-                        <textarea name="message" class="form-input" placeholder="Your Message" required data-form-input></textarea>
-                        <button class="form-btn" type="submit" id="button" disabled data-form-btn>
-                            <ion-icon name="paper-plane"></ion-icon>
-                            <span>Send Message</span>
-                        </button>
-                    </form>
-                    
-                </section>
-
-            </article>
-
         </div>
 
     </main>
 
-
+    <!-- Scripts -->
     <script src="./assets/js/script.js"></script>
-
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-
 </body>
 
 </html>
