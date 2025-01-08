@@ -87,11 +87,15 @@ const pages = document.querySelectorAll('[data-page]');
 if (navigationLinks && pages) {
     navigationLinks.forEach((link, index) => {
         link.addEventListener('click', () => {
+            // Remove 'active' class from all pages and nav links
             pages.forEach(page => page.classList.remove('active'));
             navigationLinks.forEach(nav => nav.classList.remove('active'));
 
+            // Add 'active' class to the clicked page and link
             pages[index].classList.add('active');
             link.classList.add('active');
+
+            // Scroll to the top of the page
             window.scrollTo(0, 0);
         });
     });
