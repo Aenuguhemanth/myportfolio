@@ -107,22 +107,31 @@ for (let i = 0; i < formInputs.length; i++) {
     });
 }
 
-// page navigation variables
-const navigationLinks = document.querySelectorAll("[data-nav-link]");
-const pages = document.querySelectorAll("[data-page]");
+document.addEventListener('DOMContentLoaded', function() {
+    // Get all the navigation links and pages
+    const navigationLinks = document.querySelectorAll("[data-nav-link]");
+    const pages = document.querySelectorAll("[data-page]");
 
-// add event to all nav link
-for (let i = 0; i < navigationLinks.length; i++) {
-    navigationLinks[i].addEventListener("click", function() {
+    // Function to handle page switching
+    const handlePageSwitch = function() {
+        const targetPage = this.innerText.trim().toLowerCase();  // Get the target page name
         for (let i = 0; i < pages.length; i++) {
-            if (this.innerHTML.toLowerCase() === pages[i].dataset.page) {
+            const pageName = pages[i].dataset.page;
+            if (targetPage === pageName) {
+                // Show the target page and highlight the link
                 pages[i].classList.add("active");
                 navigationLinks[i].classList.add("active");
-                window.scrollTo(0, 0);
             } else {
+                // Hide other pages and remove highlight from other links
                 pages[i].classList.remove("active");
                 navigationLinks[i].classList.remove("active");
             }
         }
+        window.scrollTo(0, 0); // Scroll to the top of the page
+    };
+
+    // Attach event listener to each navigation link
+    navigationLinks.forEach(link => {
+        link.addEventListener("click", handlePageSwitch);
     });
-}
+});
